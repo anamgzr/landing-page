@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Libreria iconos web https://ionic.io--> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="img/unicornio.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background: mistyrose;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .contenedor{
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            background: snow;
+            margin: 50px;
+            box-shadow: 0 50px 75px violet;
+            border-left: 50px solid snow;
+            border-right: 50px solid snow;
+        }
+        .contenedor .top{
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: 40px;
+            padding-bottom: 0;
+        }
+        .contenedor .top .imgBx{
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .contenedor .top .imgBx .box{
+            position: relative;
+            width: 70%;
+            min-width: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            aspect-ratio: 1;
+        }
+        .contenedor .top .imgBx .box img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .contenedor .top .perfil{
+            position: relative;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+        }
+        .contenedor .top .perfil h3{
+            font-size: 3em;
+            letter-spacing: 0.1em;
+            line-height: 1.2em;
+            font-weight: 600;
+            color: purple;
+        }
+        .contenedor .top .perfil h3 span{
+            position: relative;
+            font-size: 0.5em;
+            font-weight: 300;
+            top: -10px;
+        }
+        .contenedor .caja{
+            position: relative;
+            min-height: 500px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: 0 40px 40px;
+        }
+        .contenedor .caja h3{
+            border-left: 4px solid purple;
+            padding-left: 10px;
+            line-height: 1em;
+            font-weight: 600;
+            color:purple;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+        .contenedor .caja ul{
+            position: relative;
+            margin: 10px 0;
+        }
+        .contenedor .caja ul li{
+            list-style: none;
+            margin: 25px 0;
+            line-height: 1epx m;
+            color: blueviolet;
+            cursor: pointer;
+            display: flex;
+        }
+        .contenedor .caja ul li ion-icon{
+            font-size: 1.2em;
+            margin-right: 10px;
+            color: violet;
+        }
+        .contenedor .caja ul.estudio li{
+            flex-direction: column;
+            margin: 25px 0;
+        }
+        h5{
+            color:violet;
+        }
+        h4{
+            color:black;
+            font-weight: 500;
+            margin: 5px 0;
+        }
+        h6{
+            color: blueviolet;
+            font-weight: 300;
+            font-size: 1em;
+        }
+        .idiomas li{
+            flex-direction: column;
+        }
+        .idiomas li span{
+            color: blueviolet;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        p{
+            font-style: 300;
+            text-align: justify;
+        }
+        .ladoder{
+            padding-left: 40px;
+        }
+        .perfil .caja{
+            display: flex;
+            flex-direction: row;
+            margin: 50px 0;
+        }
+        .perfil .caja .cia{
+            min-width: 150px;
+            margin-bottom: 10px;
+        }
+        .perfil .caja .cia h5{
+            color: blueviolet;
+            font-weight: 600;
+        }
+        .perfil .caja .cia h5:nth-child(1){
+            color: violet;
+        }
+        .perfil .caja .text h4{
+            color: violet;
+            font-size: 16px;
+            margin:0;
+        }
+    @media screen and (min-width:576px) {
+    contenedor{
+        display: block;
+    }
+    .perfil {
+        display: inline-block;
+    }
+    
+
+}
+@media screen and (min-width:992px){
+    .contenedor{
+        display: block;
+    }
+    
+}
+
+    </style>
+    <title>CV</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="top">
+            <div class="imgBx">
+                <div class="box">
+                    <img src="img/fotoCV.jpg" alt="">
+                </div>
+            </div>
+            <div class="perfil">
+            <h3>Ana Isabel <br>Marcos <br> Martin-Serrano <br><span>Desarrollo Web</span></h3>
+            </div>    
+        </div>
+        <div class="caja">
+            <div class="ladoiz">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                        <span class="text">637 320 933</span>
+                    </li>
+                    <li>
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <span class="text">anamgzr@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><ion-icon name="location-outline"></ion-icon></span>
+                        <span class="text">Madrid - Spain</span>
+                    </li>
+                    <li>
+                        <span class="icon"><ion-icon name="logo-linkedin"></ion-icon></span>
+                        <span class="text">www.linkedin.com</span>
+                    </li>
+                </ul>
+                <h3>Estudios</h3>
+                <ul class="estudio">
+                    <li>
+                        <h5>2023-2025</h5>
+                        <h4>CFGS Desarrollo de Aplicaciones Web</h4>
+                        <h6>Universidad Internacional de la Rioja UNIR</h6>
+                    </li>
+                    <li>
+                        <h5>2019-2021</h5>
+                        <h4>CFGS Educación Infantil</h4>
+                        <h6>Instituto Villablanca</h6>
+                    </li>
+                    <li>
+                        <h5>2000-2002</h5>
+                        <h4>CFGM Administrativo</h4>
+                        <h6>Instituto Vallecas Magerit</h6>
+                    </li>
+                </ul>
+                <h3>Idiomas</h3>
+                <ul class="idiomas">
+                    <li>
+                        <span class="text">Inglés</span>
+                        
+                        <h4>nivel bajo</h4>
+                    </li>
+                    <li>
+                        <span class="text">Español</span>
+                        <h4>nativo</h4>
+                    </li>                    
+                </ul>
+
+            </div>
+            <div class="ladoder">
+                <div class="perfil">
+                    <h3>Perfil</h3>
+                    <p>Actualmente cursando CFGS DAM, aunque para el año que viene cambiare a CFGS DAW.</p>
+                </div>
+                <div class="perfil">
+                    <h3>Experiencia</h3>
+                    <div class="caja">
+                        <div class="cia">
+                            <h5>2021-2023</h5>
+                            <h5>Escuela Infantil Acuarela</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Educadora infantil</h4>
+                            <p>Una vez finalizadas las prácticas en la Escuela Infantil Acuarela, durante 9 meses, me hicieron un contrato de 
+                                media jornada durante un curso escolar para realizar tareas de apoyo en las aulas.
+                              <br>Al terminar el curso ya me hicieron contrato a jornada completa y como tutora de aula.</p>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <div class="cia">
+                            <h5>2014-2020</h5>
+                            <h5>GRUPO KONECTA</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Analista de Riesgos</h4>
+                            <p>Atención de llamadas telefónicas para gestores del banco Santander y realizando análisis de riesgos de operaciones hipotecarias.</p>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <div class="cia">
+                            <h5>2010-2014</h5>
+                            <h5>GRUPO GUASCOR</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Auxiliar Administrativo</h4>
+                            <p>Departamento de Prevención de Riesgos Laborales: coordinación actividades empresariales. Notificaciones en DELTA. 
+                                Solicitud reconocimiento médicos para trabajadores de la empresa. <br>
+                                Departamento de Formación: notificaciones Fundación Tripartita. Gestión de cursos. <br>
+                                Departamento RRHH: Gestión de las web de búsqueda de empleo.</p>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <div class="cia">
+                            <h5>2005-2008</h5>
+                            <h5>COBRA INSTALACIONES Y SERVICIOS</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Auxiliar Administrativo</h4>
+                            <p>Departamento de licitaciones y centralita.</p>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <div class="cia">
+                            <h5>2003-2005</h5>
+                            <h5>AVANCE ELECTRICO</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Auxiliar Administrativo</h4>
+                            <p>Departamento de Compras: gestión albaranes, factura, presupuestos para instalaciones eléctricas.</p>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <div class="cia">
+                            <h5>2002-2003</h5>
+                            <h5>CANON M6 SISTEMAS</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Auxiliar Administrativo</h4>
+                            <p>Una vez finalizadas las prácticas me contrataron para la centralita.</p>
+                        </div>
+                                    
+        </div>
+    </div>
+    
+</body>
+</html>

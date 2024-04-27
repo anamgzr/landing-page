@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/unicornio.png" type="image/x-icon">
+    <style>
+        body{
+            background-image: url(img/FondoSky.jpg);
+    /*Imagen descargada de la web freepik diseñada por:
+    <a href=https://www.freepik.com>Designed by oleksandr*/
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        }
+        h1{
+            color: violet;
+            margin: 50px 0;
+            display: block;
+            text-align: center;
+            font-size: 80px;
+            text-shadow: 0 0 20px goldenrod;
+        }
+        .fotos{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .contenedor:after{
+            content: "";
+            display: block;
+            height: 0px;
+            clear: both;
+        }
+        .contenedor{
+            width: 90%;
+            margin: 0 9%;
+        }
+        .contenedor div{
+            width: 28%;
+            height: auto;
+            display: inline;
+            float: left;
+            margin: 0% 3% 0% 0%;
+            padding: 0;
+        }
+        .contenedor div img{
+            width: 100%;
+            height: auto;
+            box-shadow: 0 0 10px violet;
+            border: 5px solid goldenrod;
+        }
+        .contenedor div img~span{
+            width: 100%;
+            display: block;
+            opacity: 0;
+            margin: 0;
+            padding: 2px 5px;
+            color: goldenrod;
+            background: violet;
+            box-shadow: 0 0 10px snow;
+            text-align: center;
+        }
+        .contenedor div img:hover~span{
+            opacity: 1;
+        }
+        .contenedor:hover div{
+            opacity: 0.2;
+            transform: scale(0.7);
+            transition: 2s;
+        }
+        .contenedor:hover div:hover{
+            opacity: 1;
+            transform: scale(1);
+        }
+        @media screen and (min-width:576px) {
+    
+        .h1>*{
+        width: 25%;
+        }
+        section.fotos section.contenedor{
+        width: 50%;
+        }
+        
+        }
+        @media screen and (min-width:992px){
+    
+        section.fotos{
+        order: 1;
+        }
+        section.contenedor{
+        order:2;
+        }
+        
+        }
+    </style>
+    <title>Proyectos</title>
+</head>
+<body>
+    <div>
+        <h1>PROYECTOS 2024</h1>
+    </div>
+    <section class="fotos">
+        <div class="contenedor">
+            <div ><img src="img/fotoLMM.jpg" alt="" ><a href="https://anamgzr.github.io/BreakingBad_AMM/" target="_blank"><span >Lenguaje de Marcas</span></div></a>
+            <div><img src="img/fotoPrograma.jpg" alt=""><a href="https://github.com/anamgzr/AgendaContactos.git" target="_blank"><span>Programación</span></div></a>
+            <div><img src="img/fotoBBDD.jpg" alt=""><span>Base de Datos</span></div>
+        
+        </div>
+    </section>
+    
+</body>
+</html>

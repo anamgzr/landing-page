@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Tilt+Neon&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Pacifico";
+}
+body{
+    background-image: url(img/FondoSky.jpg);
+    /*Imagen descargada de la web freepik diseñada por:
+    <a href=https://www.freepik.com>Designed by oleksandr*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    color: magenta;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: mistyrose;
+    border-radius: 5px;
+    padding: 0 10 px;
+    font-family: "Tilt neon";
+    font-weight: 600;
+}
+header .logo:hover{
+    color: mistyrose;
+    background: magenta;
+    transition: 1s;
+}
+header .navbar{
+    position: relative;
+    display: flex;
+}
+header .navbar li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navbar li a{
+    text-decoration: none;
+    color: magenta;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+header .navbar li a:hover{
+    border-bottom: 5px solid mistyrose;
+    padding: 2px;
+}
+/*contenido de la web*/
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+.contenido .tituloBox{
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+}
+.contenido .tituloBox h2{
+    font-size: 4.5em;
+    text-transform: uppercase;
+    color: magenta;    
+}
+.contenido .tituloBox h2 span{
+    background: mistyrose;
+    color: magenta;
+    padding: 0;
+    font-family: "Pacifico";
+    font-weight: 600;
+    border-radius: 20px;
+}
+.contenido .tituloBox p {
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: magenta;
+    font-family: "Pacifico";
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: mistyrose;
+    background: magenta;
+    padding: 10px 20px;
+    margin: left 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+/*Imagen descargada de la web freepik diseñada por:<a href=https://www.freepik.com>Designed by Sonatik*/
+ 
+.contenido .imgBox{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+    z-index: -5;
+}
+.contenido .imgBox img{
+    height: 50vh;
+    box-shadow: 0 0 10px magenta;
+    
+}
+
+/*Copyright*/
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    left: 400px;
+    margin-bottom: 20px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.copyright p{
+    color: magenta;
+    text-align: center; 
+    margin-left: 70px;
+}
+/*Redes Sociales*/
+.redesSociales{
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 30px;
+    list-style: none;
+}
+.redesSociales li{
+    padding: 10px;
+}
+.redesSociales li a {
+    color: magenta;
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+.redesSociales li:hover a{
+    color: black;
+}
+/*Contacto*/
+.contacto{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.h1{    
+    text-align: center;
+    font-size: 60px;
+    color: violet;
+    margin: 50px 0;
+    display: block;
+    text-shadow:  0 0 30px mistyrose;
+}
+fieldset{
+    color: purple;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: pacifico;
+    border-color: solid 2px snow;
+} 
+input{
+    font-size: 20px;
+    background: seashell;
+    color: purple;
+    border: 1px solid gold;
+}
+input:valid{
+    background: seashell;
+    color: violet;
+}
+input:hover{
+    transition: 1s;
+    padding: 2%;
+}
+textarea{
+    background: seashell;
+    font-size: 25px;
+    color: violet;
+}
+/*proyectos*/
+h1{
+    color: violet;
+    margin: 50px 0;
+    display: block;
+    text-align: center;
+    font-size: 80px;
+    text-shadow: 0 0 20px goldenrod;
+}
+.fotos{
+    width: 100%;
+    margin: 0 auto;
+}
+.contenedor:after{
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.contenedor{
+    width: 90%;
+    margin: 0 9%;
+}
+.contenedor div{
+    width: 28%;
+    height: auto;
+    display: inline;
+    float: left;
+    margin: 0% 3% 0% 0%;
+    padding: 0;
+}
+.contenedor div img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px violet;
+    border: 5px solid goldenrod;
+}
+.contenedor div img~span{
+    width: 100%;
+    display: block;
+    opacity: 0;
+    margin: 0;
+    padding: 2px 5px;
+    color: goldenrod;
+    background: violet;
+    box-shadow: 0 0 10px snow;
+    text-align: center;
+}
+.contenedor div img:hover~span{
+    opacity: 1;
+}
+.contenedor:hover div{
+    opacity: 0.2;
+    transform: scale(0.7);
+    transition: 2s;
+}
+.contenedor:hover div:hover{
+    opacity: 1;
+    transform: scale(1);
+}
+/*aplicar el responsive*/
+@media screen and (min-width:576px) {
+    section{
+        display: flex;
+    }
+    .contenido .contacto{
+        display: flex;
+    }
+    .copyright .formulario{
+        display: inline-block;
+    }
+    .redesSociales{
+        display: flex;
+    }
+
+}
+@media screen and (min-width:992px){
+    .redesSociales{
+        width: 20%;
+    }
+    .fieldset{
+        display: inline-block;
+    }
+    .tituloBox{
+        display: block;
+    }
+}
